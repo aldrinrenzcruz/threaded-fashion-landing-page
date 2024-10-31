@@ -195,50 +195,93 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 
 .sitewide-deals-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 150px;
   background-color: var(--base-white);
 }
-
-.discount-item {
-  font-weight: bold;
-  color: #000;
-  padding: 10px;
-}
-.discount-item h3 {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-.discount-item p {
-  font-size: 14px;
-  margin: 0;
-  color: #555;
-}
-
-.deal-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
+.sitewide-deals-section .sitewide-deals__item {
+  width: 160px;
+  height: 60px;
+  margin-left: 15px;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
 }
-.deal-button:hover {
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
+.sitewide-deals-section .sitewide-deals__item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39.01px;
+  margin-bottom: 6px;
+}
+.sitewide-deals-section .sitewide-deals__item h3 span {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21.94px;
+  padding: 0 10px;
+}
+.sitewide-deals-section .sitewide-deals__item p {
+  margin-left: -20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.19px;
+}
+.sitewide-deals-section button {
+  width: 363px;
+  height: 42px;
+  border: none;
+  background-color: var(--base-black);
+  color: var(--base-white);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  text-transform: uppercase;
 }
 
-.vip-exlusive-banner {
+.vip-exlusive-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
   height: 75px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 13.54%, #000000 40.1%, #000000 100%);
   background-image: url("/assets/imgs/black-friday-exclusive-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.vip-exlusive-section * {
+  display: inline-block;
+  color: var(--base-white);
+  text-transform: uppercase;
+}
+.vip-exlusive-section h2 {
+  margin-top: 8px;
+  margin-left: 118px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39.01px;
+}
+.vip-exlusive-section h3 {
+  margin-top: 10px;
+  margin-left: -4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+}
+.vip-exlusive-section button {
+  width: 149px;
+  height: 42px;
+  margin-left: 104px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  background-color: var(--base-white);
+  color: var(--base-black);
 }
 
 .trending-section {
