@@ -15,46 +15,65 @@
 
   <div class="container">
 
-    <!-- Main header -->
-    <header>
-      <nav class="nav header__nav">
-        <a class="nav-link active" href="#">WOMEN</a>
-        <a class="nav-link" href="#">PLUS</a>
-        <a class="nav-link" href="#">MEN</a>
-        <a class="nav-link" href="#">ACCESSORIES</a>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between align-items-center">
+      <nav class="nav header__left-nav">
+        <a class="nav-link active" href="#">Women</a>
+        <a class="nav-link" href="#">Plus</a>
+        <a class="nav-link" href="#">Men</a>
+        <a class="nav-link" href="#">Accessories</a>
       </nav>
 
-      <h1 class="m-0">THREADED</h1>
+      <img class="header__logo" src="assets/imgs/threaded-logo.svg" alt="Threaded Logo">
 
-      <div class="d-flex align-items-center gap-3">
-        <a href="#"><i class="bi bi-person"></i></a>
-        <a href="#"><i class="bi bi-heart"></i></a>
-        <a href="#"><i class="bi bi-search"></i></a>
-        <a href="#"><i class="bi bi-bag"></i></a>
-
-        <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="path/to/flag.png" alt="USD Flag" width="20"> USD $
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">USD $</a></li>
-            <li><a class="dropdown-item" href="#">EUR €</a></li>
-            <li><a class="dropdown-item" href="#">GBP £</a></li>
-          </ul>
-        </div>
-      </div>
+      <nav class="header__right-nav d-flex align-items-center gap-3">
+        <button class="header__right-nav_btn" type="button"><img src="assets/icons/bx_bx-user.svg" alt="user icon"></button>
+        <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-shopping-bag.svg" alt="shopping cart icon"></button>
+        <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-heart.svg" alt="heart icon"></button>
+        <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-support.svg" alt="support icon"></button>
+        <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-search.svg" alt="search icon"></button>
+        <button class="right-nav__currency-dropdown-btn" type="button">
+          <img class="us-flag-icon" src="assets/icons/us-flag.png" alt="US flag">
+          <span class="currency-text">USD $</span>
+          <img class="dropdown-icon" src="assets/icons/ant-design_down-outlined.png" alt="dropdown icon">
+        </button>
+      </nav>
     </header>
 
-    <!-- Benefits Banner -->
-    <section class="benefits-banner">
-      <span><i class="bi bi-crown"></i> Exclusive Deals for VIP 2 and up!</span>
-      <span><i class="bi bi-star"></i> Weekly New Arrivals</span>
-      <span><i class="bi bi-truck"></i> Free Shipping on Orders Over $100</span>
-      <span><i class="bi bi-compass"></i> Track Your Order</span>
-      <span><i class="bi bi-tag"></i> 10% Off On Your First Order!</span>
+    <!-- Benefits Section -->
+    <section class="benefits-section d-flex justify-content-center align-items-center">
+      <div class="benefits-container d-flex justify-content-between align-items-center">
+        <div class="benefits-item">
+          <img src="assets/icons/benefits-crown.svg" alt="Crown icon" />
+          <span>Exclusive Deals for VIP 2 and up!</span>
+        </div>
+        <div class="benefits-item">
+          <img src="assets/icons/benefits-star.svg" alt="Star icon" />
+          <span>Weekly New Arrivals</span>
+        </div>
+        <div class="benefits-item">
+          <img src="assets/icons/benefits-truck.svg" alt="Truck icon" />
+          <span>Free Shipping On Orders Over $100</span>
+        </div>
+        <div class="benefits-item">
+          <img src="assets/icons/benefits-pin.svg" alt="Pin icon" />
+          <span>Track Your Order</span>
+        </div>
+        <div class="benefits-item">
+          <img src="assets/icons/benefits-tag.svg" alt="Tag icon" />
+          <span>10% Off On Your First Order!</span>
+        </div>
+      </div>
     </section>
 
-    <section class="hero-section"></section>
+    <section class="hero-section">
+      <img class="hero-section__promo-img" src="assets/imgs/hero-section-black-friday-promo.png" alt="Black Friday Promo" />
+      <button class="hero-section__shop-now-btn">Shop Now</button>
+      <button class="carousel-left-arrow"><img src="assets/icons/ant-design_left-outlined.png" alt="carousel left arrow"></button>
+      <button class="carousel-right-arrow"><img src="assets/icons/ant-design_right-outlined.png" alt="carousel left arrow"></button>
+      <button class="carousel-indicator"><img src="assets/icons/slider bullets.png" alt="carousel slider bullets"></button>
+    </section>
+
     <section class="sitewide-deals-section"></section>
     <section class="vip-exlusive-banner"></section>
     <section class="trending-section"></section>
@@ -63,11 +82,6 @@
     <section class="inspiration-section"></section>
     <section class="newsletter-section"></section>
     <footer></footer>
-
-
-
-
-
 
   </div>
 
