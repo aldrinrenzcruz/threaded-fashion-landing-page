@@ -3,6 +3,7 @@
   --base-white: #ffffff;
   --base-gray: #f2f2f2;
   --base-beige: #ede9dd;
+  --base-red: #c1272d;
   --gray-1: #4d4d4d;
   --ff-base: "Montserrat", sans-serif;
 }
@@ -399,25 +400,39 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 .recently-bought-section {
   height: 580px;
   background-color: var(--base-white);
-}
-
-.recently-bought {
   text-align: center;
-  padding: 50px 0;
+  padding-top: 40px;
 }
-
-.product-title {
-  font-size: 1rem;
-  margin: 10px 0;
+.recently-bought-section h2 {
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43.88px;
 }
-
-.product-price {
-  color: #000;
-  font-weight: bold;
+.recently-bought-section .row {
+  margin-top: 28px;
 }
-
-.product-old-price {
-  color: red;
+.recently-bought-section .custom-card {
+  padding: 20px;
+}
+.recently-bought-section img {
+  width: 225px;
+  height: 300px;
+}
+.recently-bought-section .product-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+.recently-bought-section .product-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+.recently-bought-section .product-new-price {
+  color: var(--base-red);
+}
+.recently-bought-section .product-old-price {
   text-decoration: line-through;
   margin-left: 5px;
 }
