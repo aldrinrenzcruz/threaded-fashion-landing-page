@@ -1,6 +1,7 @@
-let shoppingCartBtn = document.querySelector("#shopping-cart-btn");
+const shoppingCartContainer = document.querySelector("#shopping-cart-container");
+const shoppingCartBtn = document.querySelector("#shopping-cart-btn");
 
-shoppingCartBtn.addEventListener("click", () => { console.log("test") })
+shoppingCartBtn.addEventListener("click", () => { toggle(shoppingCartContainer) })
 
 function getElement(param) {
   return typeof param === "string" ? document.querySelector(`#${param}`) : param;

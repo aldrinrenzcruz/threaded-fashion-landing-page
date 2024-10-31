@@ -580,4 +580,15 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   position: absolute;
   right: 70px;
   bottom: 69px;
+}
+
+#shopping-cart-container {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+  z-index: 20;
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

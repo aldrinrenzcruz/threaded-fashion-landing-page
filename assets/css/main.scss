@@ -655,3 +655,14 @@ header {
     bottom: 69px;
   }
 }
+
+#shopping-cart-container {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+  z-index: 20;
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
