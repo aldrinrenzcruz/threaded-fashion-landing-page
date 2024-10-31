@@ -1,0 +1,20 @@
+:root {
+  --ff-base: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-base);
+}
+
+.main-container {
+  max-width: 1440px;
+}
