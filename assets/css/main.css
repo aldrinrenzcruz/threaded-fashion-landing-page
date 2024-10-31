@@ -146,7 +146,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   position: relative;
   height: 650px;
   background-color: var(--base-beige);
-  background-image: url("/assets/imgs/hero-section-bg.png");
+  background-image: url("../imgs/hero-section-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   gap: 3rem;
   height: 75px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 13.54%, #000000 40.1%, #000000 100%);
-  background-image: url("/assets/imgs/black-friday-exclusive-bg.png");
+  background-image: url("../imgs/black-friday-exclusive-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -359,7 +359,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   position: relative;
   height: 400px;
   background: linear-gradient(90deg, rgba(255, 203, 124, 0) 0%, #ffcb7c 100%);
-  background-image: url("/assets/imgs/new-arrivals-section-bg.png");
+  background-image: url("../imgs/new-arrivals-section-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -516,15 +516,22 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 }
 
 .footer {
+  position: relative;
   height: 360px;
   background-color: #ffffff;
   padding: 40px 0;
 }
-.footer .footer-title {
-  font-weight: bold;
-  margin-bottom: 15px;
+.footer .footer-heading {
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-transform: uppercase;
 }
 .footer .footer-links li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
   list-style: none;
   margin-bottom: 10px;
 }
@@ -540,4 +547,14 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 .footer .payment-icons img {
   max-width: 40px;
   margin-right: 10px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.footer .footer__logo {
+  position: absolute;
+  right: 70px;
+  bottom: 69px;
 }/*# sourceMappingURL=main.css.map */
