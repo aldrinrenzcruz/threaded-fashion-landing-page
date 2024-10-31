@@ -409,17 +409,26 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   font-size: 36px;
   line-height: 43.88px;
 }
-.recently-bought-section .row {
-  margin-top: 28px;
+.recently-bought-section .custom-card-group-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .recently-bought-section .custom-card {
+  width: 265px;
+  height: 415px;
   padding: 20px;
+  text-align: left;
 }
 .recently-bought-section img {
   width: 225px;
   height: 300px;
 }
 .recently-bought-section .product-title {
+  margin-top: 6px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17.07px;
@@ -439,30 +448,38 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 
 .inspiration-section {
   height: 550px;
-  background-color: var(--base-gray);
-}
-
-.inspo-section {
-  background-color: #f4f4f4;
   text-align: center;
-  padding: 50px 0;
+  background-color: var(--base-gray);
+  padding-top: 50px;
 }
-.inspo-section .inspo-title {
-  font-weight: bold;
-  margin-bottom: 10px;
+.inspiration-section h2 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43.88px;
 }
-.inspo-section .inspo-subtitle {
-  color: #6c757d;
-  margin-bottom: 30px;
+.inspiration-section p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
 }
-.inspo-section .inspo-btn {
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 20px;
+.inspiration-section button {
+  width: 198px;
+  height: 42px;
+  margin-top: 30px !important;
   border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
   text-transform: uppercase;
-  margin-top: 20px;
+  background-color: var(--base-black);
+  color: var(--base-white);
+}
+.inspiration-section img {
+  margin-right: 22px;
+  margin-left: 22px;
 }
 
 .newsletter-section {
