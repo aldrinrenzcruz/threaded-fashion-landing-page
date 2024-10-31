@@ -560,18 +560,38 @@ header {
     text-transform: uppercase;
   }
 
-  input {
-    width: 354px;
-    height: 35px;
-    border: none;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-weight: 400;
-    font-size: 14px;
-    background-color: var(--base-gray);
+  .input-container {
+    position: relative;
 
-    &::placeholder {
-      color: var(--gray-1);
+    input {
+      width: 354px;
+      height: 35px;
+      border: none;
+      padding-right: 50px;
+      padding-left: 16px;
+      font-weight: 400;
+      font-size: 14px;
+      background-color: var(--base-gray);
+
+      &::placeholder {
+        color: var(--gray-1);
+      }
+
+      &:focus {
+        outline: 0 none;
+      }
+    }
+
+    .submit-btn {
+      position: absolute;
+      right: 0;
+      top: 48%;
+      transform: translateY(-48%);
+      width: 35px;
+      height: 35px;
+      border: none;
+      background: var(--base-white);
+      cursor: pointer;
     }
   }
 }
@@ -584,6 +604,7 @@ header {
 
   .footer-heading {
     margin-left: 30px;
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 12px;
     line-height: 14.63px;
@@ -596,7 +617,7 @@ header {
       font-size: 12px;
       line-height: 14.63px;
       list-style: none;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
 
       a {
         color: #000;
@@ -617,6 +638,7 @@ header {
   }
 
   p {
+    margin-left: 30px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14.63px;

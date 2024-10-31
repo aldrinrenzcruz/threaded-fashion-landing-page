@@ -498,21 +498,38 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   color: var(--base-white);
   text-transform: uppercase;
 }
-.newsletter-section input {
+.newsletter-section .input-container {
+  position: relative;
+}
+.newsletter-section .input-container input {
   width: 354px;
   height: 35px;
   border: none;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 50px;
+  padding-left: 16px;
   font-weight: 400;
   font-size: 14px;
   background-color: var(--base-gray);
 }
-.newsletter-section input::-moz-placeholder {
+.newsletter-section .input-container input::-moz-placeholder {
   color: var(--gray-1);
 }
-.newsletter-section input::placeholder {
+.newsletter-section .input-container input::placeholder {
   color: var(--gray-1);
+}
+.newsletter-section .input-container input:focus {
+  outline: 0 none;
+}
+.newsletter-section .input-container .submit-btn {
+  position: absolute;
+  right: 0;
+  top: 48%;
+  transform: translateY(-48%);
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: var(--base-white);
+  cursor: pointer;
 }
 
 .footer {
@@ -523,6 +540,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 }
 .footer .footer-heading {
   margin-left: 30px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 12px;
   line-height: 14.63px;
@@ -533,7 +551,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   font-size: 12px;
   line-height: 14.63px;
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .footer .footer-links li a {
   color: #000;
@@ -549,6 +567,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   margin-right: 10px;
 }
 .footer p {
+  margin-left: 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14.63px;
