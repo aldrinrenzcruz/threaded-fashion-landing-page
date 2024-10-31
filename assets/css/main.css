@@ -288,39 +288,70 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   height: 1040px;
   background-color: var(--base-white);
   padding: 40px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .trending-section h2 {
-  font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43.88px;
+  text-align: center;
 }
 .trending-section p {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.trending-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-.trending-item h6 {
-  font-weight: bold;
   margin-top: 10px;
-}
-
-.trending-tags {
-  margin-top: 20px;
-}
-.trending-tags .tag {
-  display: inline-block;
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 8px 15px;
-  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  font-weight: 400;
   font-size: 14px;
-  margin: 5px;
+  line-height: 17.07px;
+  text-align: center;
+}
+.trending-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1060px;
+  margin-left: -20px;
+}
+.trending-section .trending-item {
+  width: 23%;
+  height: 390px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+.trending-section .trending-item img {
+  width: 225px;
+  height: 300px;
+  margin: 0 auto;
+}
+.trending-section .trending-item h3 {
+  width: 225px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+  margin-top: 11px;
+}
+.trending-section .trending-tags-container {
+  margin-top: 7px;
+  text-align: center;
+}
+.trending-section .trending-tags-container .tag {
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid var(--base-black);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.07px;
   text-decoration: none;
+  color: var(--base-black);
 }
 
 .new-arrivals-section {
@@ -334,6 +365,7 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 
 .recently-bought-section {
   height: 580px;
+  background-color: var(--base-white);
 }
 
 .recently-bought {

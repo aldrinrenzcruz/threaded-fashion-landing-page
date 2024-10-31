@@ -15,7 +15,7 @@
 
   <div class="container">
 
-    <!-- Header Section -->
+    <!-- HEADER SECTION -->
     <header class="d-flex justify-content-between align-items-center">
       <nav class="nav header__left-nav">
         <a class="nav-link active" href="#">Women</a>
@@ -23,9 +23,7 @@
         <a class="nav-link" href="#">Men</a>
         <a class="nav-link" href="#">Accessories</a>
       </nav>
-
       <img class="header__logo" src="assets/imgs/threaded-logo.svg" alt="Threaded Logo">
-
       <nav class="header__right-nav d-flex align-items-center gap-3">
         <button class="header__right-nav_btn" type="button"><img src="assets/icons/bx_bx-user.svg" alt="user icon"></button>
         <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-shopping-bag.svg" alt="shopping cart icon"></button>
@@ -40,7 +38,7 @@
       </nav>
     </header>
 
-    <!-- Benefits Section -->
+    <!-- BENEFITS SECTION -->
     <section class="benefits-section d-flex justify-content-center align-items-center">
       <div class="benefits-container d-flex justify-content-between align-items-center">
         <div class="benefits-item">
@@ -66,6 +64,7 @@
       </div>
     </section>
 
+    <!-- HERO SECTION -->
     <section class="hero-section">
       <img class="hero-section__promo-img" src="assets/imgs/hero-section-black-friday-promo.png" alt="Black Friday Promo" />
       <button class="hero-section__shop-now-btn">Shop Now</button>
@@ -74,6 +73,7 @@
       <button class="carousel-indicator"><img src="assets/icons/slider bullets.png" alt="carousel slider bullets"></button>
     </section>
 
+    <!-- SITEWIDE DEALS SECTION -->
     <section class="sitewide-deals-section">
       <div class="sitewide-deals__item">
         <h3>$5 <span>Off</span></h3>
@@ -94,51 +94,54 @@
       <button type="button">Check out all site-wide deals</button>
     </section>
 
+    <!-- VIP EXCLUSIVE SECTION -->
     <section class="vip-exlusive-section">
       <h2>Black Friday Exclusive</h2>
       <h3>Free shipping on all orders for<br>VIP 2 and up!</h3>
       <button type="button">Shop Now</button>
     </section>
 
+    <!-- TRENDING SECTION -->
     <section class="trending-section">
       <h2>Now Trending</h2>
       <p>See what everyone’s wearing right now</p>
       <div class="row">
-        <!-- Trending Items -->
-        <div class="col-md-3 col-sm-6 trending-item">
-          <img src="https://via.placeholder.com/150" alt="Winter Fashion">
-          <h6>WINTER FASHION</h6>
+        <!-- Add correct breakpoints here for different viewports -->
+        <!-- Make the cards a stretched link that leads to the category page -->
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-winter-fashion.png" alt="Winter Fashion">
+          <h3>WINTER FASHION</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item">
-          <img src="https://via.placeholder.com/150" alt="Boots">
-          <h6>BOOTS</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-boots.png" alt="Boots">
+          <h3>BOOTS</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item">
-          <img src="https://via.placeholder.com/150" alt="Night Out">
-          <h6>NIGHT OUT</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-night-out.png" alt="Night Out">
+          <h3>NIGHT OUT</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item">
-          <img src="https://via.placeholder.com/150" alt="Holidays">
-          <h6>HOLIDAYS</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-holidays.png" alt="Holidays">
+          <h3>HOLIDAYS</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item mt-4">
-          <img src="https://via.placeholder.com/150" alt="Outerwear">
-          <h6>OUTERWEAR</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-outerwear.png" alt="Outerwear">
+          <h3>OUTERWEAR</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item mt-4">
-          <img src="https://via.placeholder.com/150" alt="White Dresses">
-          <h6>WHITE DRESSES</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-white-dresses.png" alt="White Dresses">
+          <h3>WHITE DRESSES</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item mt-4">
-          <img src="https://via.placeholder.com/150" alt="Sweaters">
-          <h6>SWEATERS</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-sweaters.png" alt="Sweaters">
+          <h3>SWEATERS</h3>
         </div>
-        <div class="col-md-3 col-sm-6 trending-item mt-4">
-          <img src="https://via.placeholder.com/150" alt="Party">
-          <h6>PARTY</h6>
+        <div class="col-lg-3 trending-item">
+          <img src="assets/imgs/trending-party.png" alt="Party">
+          <h3>PARTY</h3>
         </div>
       </div>
-      <div class="trending-tags">
+      <div class="trending-tags-container">
         <a href="#" class="tag">#Thanksgiving</a>
         <a href="#" class="tag">#NewYears</a>
         <a href="#" class="tag">#Knitted</a>
@@ -148,11 +151,160 @@
       </div>
     </section>
 
-    <section class="new-arrivals-section"></section>
-    <section class="recently-bought-section"></section>
-    <section class="inspiration-section"></section>
-    <section class="newsletter-section"></section>
-    <footer></footer>
+    <!-- NEW ARRIVALS SECTION -->
+    <section class="new-arrivals-section">
+      <div class="content">
+        <h2>New Arrivals</h2>
+        <p>Get ready for the holidays with us!</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <!-- RECENTLY BOUGHT SECTION -->
+    <section class="recently-bought-section">
+      <h2 class="fw-bold">Recently Bought</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imgs/recently-bought-festive-looks-rust.png" class="card-img-top" alt="Product Image">
+              <div class="card-body text-center">
+                <p class="product-title">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
+                <p class="product-price">$38</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imgs/recently-bought-chevron-flap.png" class="card-img-top" alt="Product Image">
+              <div class="card-body text-center">
+                <p class="product-title">Chevron Flap Crossbody Bag</p>
+                <p class="product-price">$5.77 <span class="product-old-price">$7.34</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imgs/recently-bought-manilla-tan.png" class="card-img-top" alt="Product Image">
+              <div class="card-body text-center">
+                <p class="product-title">Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
+                <p class="product-price">$29 <span class="product-old-price">$39</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imgs/recently-bought-diamante-puff.png" class="card-img-top" alt="Product Image">
+              <div class="card-body text-center">
+                <p class="product-title">Diamante Puff Sleeve Dress - Black</p>
+                <p class="product-price">$45.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imgs/recently-bought-banneth-open.png" class="card-img-top" alt="Product Image">
+              <div class="card-body text-center">
+                <p class="product-title">Banneth Open Front Formal Dress In Black</p>
+                <p class="product-price">$69 <span class="product-old-price">$99.95</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSPIRATION SECTION -->
+    <section class="inspiration-section">
+      <h2 class="inspo-title">Your Next Inspo</h2>
+      <p class="inspo-subtitle">Checkout who's wearing what by using #THREADEDInspo on Instagram</p>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <img src="assets/imgs/ispiration-section-thmb-1.png" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="assets/imgs/ispiration-section-thmb-2.png" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="assets/imgs/ispiration-section-thmb-3.png" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="assets/imgs/ispiration-section-thmb-4.png" class="img-fluid">
+          </div>
+          <div class="col">
+            <img src="assets/imgs/ispiration-section-thmb-5.png" class="img-fluid">
+          </div>
+        </div>
+        <button class="inspo-btn mt-4">View All Posts</button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section">
+      <h2>Sign up for exclusive deals and updates</h2>
+      <input type="email" placeholder="Your Email Address">
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="row">
+
+        <div class="col-md-3">
+          <h5 class="footer-title">Company Info</h5>
+          <ul class="footer-links">
+            <li><a href="#">About THREADED</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="footer-title">Help &amp; Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">How to Order</a></li>
+            <li><a href="#">How to Track</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="footer-title">Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Methods</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="footer-title">Follow Us</h5>
+
+          <div class="social-icons">
+            <a href="#"><img src="assets/icons/bx_bxl-facebook.svg" alt=""></a>
+            <a href="#"><img src="assets/icons/bx_bxl-instagram.svg" alt=""></a>
+            <a href="#"><img src="assets/icons/bx_bxl-twitter.svg" alt=""></a>
+            <a href="#"><img src="assets/icons/bx_bxl-youtube.svg" alt=""></a>
+            <a href="#"><img src="assets/icons/bx_bxl-pinterest-alt.svg" alt=""></a>
+            <a href="#"><img src="assets/icons/bx_bxl-tiktok.svg" alt=""></a>
+          </div>
+
+          <h5 class="footer-title mt-4">We Accept</h5>
+          <div class="payment-icons">
+            <img src="assets/icons/visa-logo.png" alt="Visa">
+            <img src="assets/icons/mastercard-logo.png" alt="Mastercard">
+            <img src="assets/icons/maestro-logo.png" alt="Maestro">
+            <img src="assets/icons/amex-logo.png" alt="American Express">
+            <img src="assets/icons/paypal-logo.png" alt="PayPal">
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2021 THREADED All Rights Reserved.</p>
+      </div>
+    </footer>
 
   </div>
 
