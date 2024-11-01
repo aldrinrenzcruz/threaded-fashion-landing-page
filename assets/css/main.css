@@ -60,6 +60,7 @@ header .header__left-nav .nav-link.active {
   font-weight: 600;
 }
 header .header__right-nav {
+  position: relative;
   margin-right: 24px;
 }
 header .header__right-nav button {
@@ -447,6 +448,9 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
 }
 .recently-bought-section .add-to-cart-btn {
   float: right;
+  border: none;
+  font-weight: 600;
+  background-color: inherit;
   cursor: pointer;
 }
 
@@ -582,13 +586,22 @@ header .header__right-nav .right-nav__currency-dropdown-btn .dropdown-icon {
   bottom: 69px;
 }
 
+#shopping-cart-counter-ui {
+  position: absolute;
+  right: 234px;
+  top: 6px;
+  z-index: 2;
+  font-weight: 600;
+}
+
 #shopping-cart-container {
   position: absolute;
-  right: 300px;
+  right: 60px;
   top: 60px;
   z-index: 20;
   display: none;
   width: 400px;
   height: 400px;
-  background-color: red;
+  border: 1px solid var(--gray-1);
+  background-color: var(--base-white);
 }/*# sourceMappingURL=main.css.map */
