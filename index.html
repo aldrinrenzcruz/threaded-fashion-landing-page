@@ -9,6 +9,7 @@
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -26,8 +27,8 @@
       <img class="header__logo" src="assets/imgs/threaded-logo.svg" alt="Threaded Logo">
       <nav class="header__right-nav d-flex align-items-center gap-3">
         <button class="header__right-nav_btn" type="button"><img src="assets/icons/bx_bx-user.svg" alt="user icon"></button>
-        <button class="header__right-nav_btn" id="shopping-cart-btn" type=" button"><img src="assets/icons/bx_bx-shopping-bag.svg" alt="shopping cart icon"></button>
-        <span id="shopping-cart-counter-ui">0</span>
+        <button class="header__right-nav_btn" id="shopping-cart-overview-btn" type=" button"><img src="assets/icons/bx_bx-shopping-bag.svg" alt="shopping cart icon"></button>
+        <span id="shopping-cart-overview-counter-ui">0</span>
         <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-heart.svg" alt="heart icon"></button>
         <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-support.svg" alt="support icon"></button>
         <button class="header__right-nav_btn" type=" button"><img src="assets/icons/bx_bx-search.svg" alt="search icon"></button>
@@ -37,10 +38,17 @@
           <img class="dropdown-icon" src="assets/icons/ant-design_down-outlined.png" alt="dropdown icon">
         </button>
       </nav>
-
-      <!-- SHOPPING CART CONTAINER -->
-      <aside id="shopping-cart-container"></aside>
+      <!-- SHOPPING CART OVERVIEW CONTAINER -->
+      <aside id="shopping-cart-overview-container"></aside>
     </header>
+
+    <!-- SHOPPING CART OVERLAY -->
+    <section id="shopping-cart-overlay">
+      <button id="shopping-cart-overlay-close-btn" type="button"><img src="assets/icons/x-lg.svg" alt="close button"></button>
+      <div class="shopping-cart-container">
+        <span id="shopping-cart-data-placeholder"></span>
+      </div>
+    </section>
 
     <!-- BENEFITS SECTION -->
     <section class="benefits-section d-flex justify-content-center align-items-center">

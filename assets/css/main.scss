@@ -28,9 +28,9 @@ body {
   max-width: 1464px;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
+// ::-webkit-scrollbar {
+//   width: 0;
+// }
 
 header {
   position: sticky;
@@ -659,15 +659,16 @@ header {
   }
 }
 
-#shopping-cart-counter-ui {
+#shopping-cart-overview-counter-ui {
   position: absolute;
   right: 234px;
   top: 6px;
   z-index: 2;
+  display: none;
   font-weight: 600;
 }
 
-#shopping-cart-container {
+#shopping-cart-overview-container {
   position: absolute;
   right: 60px;
   top: 60px;
@@ -675,6 +676,52 @@ header {
   display: none;
   width: 400px;
   height: 400px;
+  overflow-y: scroll;
   border: 1px solid var(--gray-1);
   background-color: var(--base-white);
+}
+
+#shopping-cart-btn {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--base-black);
+  color: var(--base-white);
+}
+
+#shopping-cart-overlay-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background-color: inherit;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#shopping-cart-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-white);
+}
+
+.shopping-cart-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 600px;
+  overflow-y: scroll;
+  border: 1px solid var(--base-black);
 }

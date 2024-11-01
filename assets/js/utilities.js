@@ -2,7 +2,7 @@
 // 1. Add an event listener to close the shopping cart container when clicking outside of it (And when not clicking the cart btn)
 // 2. Add Esc event listener to close the shopping cart container
 
-shoppingCartBtn.addEventListener("click", () => { toggle(shoppingCartContainer) })
+shoppingCartOverviewBtn.addEventListener("click", () => { renderShoppingCartOverview(); toggle(shoppingCartOverviewContainer) })
 
 function getElement(param) {
   return typeof param === "string" ? document.querySelector(`#${param}`) : param;
@@ -49,3 +49,25 @@ function toggle(param, display_style) {
     console.warn("Element being toggled not found or invalid parameter.");
   }
 }
+
+function openOverlay() {
+  const overlay = document.getElementById("shopping-cart-overlay");
+  overlay.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeOverlay() {
+  removeItemsWithZeroQuantity();
+  renderShoppingCartOverview();
+  const overlay = document.getElementById("shopping-cart-overlay");
+  overlay.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeOverlay();
+  }
+});
+
+document.querySelector("#shopping-cart-overlay-close-btn").addEventListener("click", closeOverlay);
